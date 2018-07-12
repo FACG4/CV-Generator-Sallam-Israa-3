@@ -11,15 +11,11 @@ class ImageSectionComponent extends React.Component{
   }
 
   handleInputChange(evt) {
-     // this.props.logSrc(e.target.id, e.target.value)
-    var files = evt.target.files;
+     var files = evt.target.files;
    if (FileReader && files && files.length) {
        var fr = new FileReader();
        fr.onload = () => {
-         // console.log(this.props);
-
-         this.props.newSrc(fr.result)
-       }
+         this.props.newSrc(fr.result)}
        fr.readAsDataURL(files[0])}}
 
 
@@ -28,14 +24,14 @@ class ImageSectionComponent extends React.Component{
 window.location='/finalcv'}
 
   render(){return <div className="ImageSectionComponent">
-
-    <span className="span">Add professional image for you<br/><br/></span>
+<br/><br/>
+    <span className="span">Add professional image for you<br/></span>
     <label className="imageDiv">Browse
     <input type="file" onChange={this.handleInputChange} />
     </label>
     <div className="generateBtn">
     <Link to='/finalcv' className="genarateCV">GENERATE!</Link>
-    </div> 
+    </div>
     </div>}
 
 }

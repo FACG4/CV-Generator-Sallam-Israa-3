@@ -21,17 +21,13 @@ render(){return <div className="FinalCv">
 <p>{this.props.education}</p>
 
 <h3>{this.props.degree}</h3>
-<h5>{this.props.school}</h5>
-<h5>{this.props.date}</h5>
-<h6>{this.props.moreEducation}</h6>
-
-
-
+<p>{this.props.school}</p>
+<p>{this.props.date}</p>
+<p>{this.props.moreEducation}</p>
 
 </div>
   </div>}
 
 }
-
 
 export default FinalCv;

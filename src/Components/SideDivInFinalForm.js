@@ -16,12 +16,15 @@ render(){
 </div>
 <div className="name">{this.props.name}</div>
 <div className="contactDataDiv">
-<h3>Email: <span className="contactDataSpan">{this.props.email}</span></h3>
-<h3>Mobile: <span className="contactDataSpan">{this.props.mobile}</span></h3>
-<h3>Telephone: <span className="contactDataSpan">{this.props.telephone}</span></h3>
+<div className="iconAndText"><i class="fas fa-at icon"></i><span className="contactDataSpan">{this.props.email}</span><br/></div>
+<div className="iconAndText"><i class="fas fa-mobile-alt icon"></i><span className="contactDataSpan">{this.props.mobile}</span><br/></div>
+<div className="iconAndText"><i class="fas fa-phone icon"></i><span className="contactDataSpan">{this.props.telephone}</span><br/></div>
 </div>
 <div className="skillsDiv">
 <h3>SKILLS</h3>
+<li>Javascript</li>
+<li>HTML</li>
+<li>CSS</li>
 <li>
 {this.props.skills}
 </li>

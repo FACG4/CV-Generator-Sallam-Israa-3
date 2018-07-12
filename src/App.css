@@ -85,8 +85,7 @@
 }
 
 .sideDiv {
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 25%;
+   width: 25%;
   height: 186vh;
   background-image: url('http://www.northernminerjobs.com/wp-content/uploads/2015/06/Resume-Check.pdf.png');
   background-size: cover;
@@ -156,4 +155,13 @@ margin-top: 30px;
 }
 
 .generateBtn{text-align: center;
+}
+
+
+.icon{
+  margin-right: 10px;
+}
+
+.iconAndText{
+  margin-top: 10px;
 }
