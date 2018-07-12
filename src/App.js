@@ -14,7 +14,6 @@ import FinalCv from './Components/FinalCv';
 
 class App extends React.Component {
   constructor(props) {
-    console.log(props);
     super(props);
     this.state = {
 
@@ -54,7 +53,6 @@ newSrc(att){
 
 
 render() {
-  console.log(this.state.answers)
   return ( <BrowserRouter >
     <Switch >
     <Route exact path = '/'  component = {  HomePageComponent  }/>

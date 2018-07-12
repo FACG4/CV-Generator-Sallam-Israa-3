@@ -1,37 +1,33 @@
 import React from 'react';
 import SideDivInFinalForm from './SideDivInFinalForm';
+import './FinalCv.css'
 
 class FinalCv extends React.Component{
   constructor(props){
     super(props);
     this.state={name:'',};
-console.log('props in final CV',props);
   }
 
+render(){return <div className="FinalCv">
+<div>
+<SideDivInFinalForm name={this.props.username} email={this.props.email} src={this.props.imgSrc} mobile={this.props.mobile} telephone={this.props.telephone} skills={this.props.skill} experiance={this.props.experiance}/>
+</div>
 
+<div className="containerCV">
 
-render(){return <div>
+<h1 className="title">SUMMARY</h1>
+<p>{this.props.summary}</p>
+<h1 className="title">EDUCATION{this.props.education}</h1>
+<p>{this.props.education}</p>
 
-<SideDivInFinalForm />
-<img src={this.props.imgSrc}/>
-<h2>Your name is:{this.props.username}</h2>
-<h3>Email:{this.props.email}</h3>
-<h3>Mobile:{this.props.mobile}</h3>
-<h3>Telephone:{this.props.telephone}</h3>
-<h3>Degree:{this.props.degree}</h3>
-<h3>School:{this.props.school}</h3>
-<h3>Date:{this.props.date}</h3>
-<h6>{this.props.moreEducation}</h6>
-<h3>Skills:{this.props.skill}</h3>
-<h3>experiance:{this.props.experiance}</h3>
+<h3>{this.props.degree}</h3>
+<p>{this.props.school}</p>
+<p>{this.props.date}</p>
+<p>{this.props.moreEducation}</p>
 
-
-
-<h1>SUMMARY{this.props.summary}</h1>
-<h1>EDUCATION{this.props.education}</h1>
+</div>
   </div>}
 
 }
-
 
 export default FinalCv;
